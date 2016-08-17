@@ -19,8 +19,7 @@ class MapGround extends Component {
 		GoogleMapsLoader.load((google) => {
 			let mapOptions = {
 		        zoom: 10,
-		        center: { lat: 51.5126064, lng: -0.1802461 },
-		        mapTypeId: google.maps.MapTypeId.ROADMAP
+		        center: { lat: 51.5126064, lng: -0.1802461 }
 		    };
 
 		    window.map = new google.maps.Map(document.getElementById('my-map'), mapOptions)
@@ -49,6 +48,12 @@ class MapGround extends Component {
 			    	infowindow.open(window.map, marker);
 				});
 		    });
+
+		    let marker = new google.maps.Marker({
+		    	position: new google.maps.LatLng(51.5126064, -0.1802461),
+		    	icon: 'http://www.gla.ac.uk/t4/robertburns/files/map/images/marker-icon-mint.png',
+		    	map: window.map
+		    })
 		});
 	}
 

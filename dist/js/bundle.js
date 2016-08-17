@@ -28875,8 +28875,6 @@
 		value: true
 	});
 
-	var _redux = __webpack_require__(245);
-
 	var _artists = __webpack_require__(263);
 
 	var _artists2 = __webpack_require__(264);
@@ -37334,8 +37332,7 @@
 				_googleMaps2.default.load(function (google) {
 					var mapOptions = {
 						zoom: 10,
-						center: { lat: 51.5126064, lng: -0.1802461 },
-						mapTypeId: google.maps.MapTypeId.ROADMAP
+						center: { lat: 51.5126064, lng: -0.1802461 }
 					};
 
 					window.map = new google.maps.Map(document.getElementById('my-map'), mapOptions);
@@ -37363,6 +37360,12 @@
 						new google.maps.event.addListener(marker, 'click', function () {
 							infowindow.open(window.map, marker);
 						});
+					});
+
+					var marker = new google.maps.Marker({
+						position: new google.maps.LatLng(51.5126064, -0.1802461),
+						icon: 'http://www.gla.ac.uk/t4/robertburns/files/map/images/marker-icon-mint.png',
+						map: window.map
 					});
 				});
 			}

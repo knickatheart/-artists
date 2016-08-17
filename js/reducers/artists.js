@@ -1,4 +1,3 @@
-import { combineReducers } from 'redux';
 import { FILTER, BYAGE, BYRATE, INIT } from '../actions/artists.js';
 import data from 'json!../../payload/artists.json';
 import { byAge, byRate } from '../utils/sort.js';
