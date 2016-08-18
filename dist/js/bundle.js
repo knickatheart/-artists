@@ -47986,7 +47986,7 @@
 							'button',
 							{ type: 'button', ref: function ref(c) {
 									return cbtn = c;
-								}, className: 'btn btn-secondary', onClick: function onClick(e) {
+								}, className: 'btn btn-secondary age', onClick: function onClick(e) {
 									e.preventDefault();
 									dbtn.disabled = false;
 									cbtn.disabled = true;
@@ -47998,7 +47998,7 @@
 							'button',
 							{ type: 'button', ref: function ref(d) {
 									return dbtn = d;
-								}, className: 'btn btn-secondary', onClick: function onClick(e) {
+								}, className: 'btn btn-secondary rate', onClick: function onClick(e) {
 									e.preventDefault();
 									cbtn.disabled = false;
 									dbtn.disabled = true;

@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 
-app.listen('3000', function() {
+var server = app.listen('3000', function() {
 	console.info('[PORT] 3000');
 });
 
@@ -12,3 +12,5 @@ app.use('/*', function(req, res) {
 });
 
 module.exports = app;
+
+module.exports = server;

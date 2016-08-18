@@ -9,13 +9,13 @@ class FilterLinks extends Component {
 		return (
 			<div className="text-xs-center">
 				<div className="btn-group" role="group" data-toggle="buttons">
-					<button type="button" ref={c => cbtn = c} className="btn btn-secondary" onClick={e => {
+					<button type="button" ref={c => cbtn = c} className="btn btn-secondary age" onClick={e => {
 						e.preventDefault();
 						dbtn.disabled = false;
 						cbtn.disabled = true;
 						this.props.dispatch(byAge());
 					}}>Age</button>
-					<button type="button" ref={d => dbtn = d} className="btn btn-secondary" onClick={e => {
+					<button type="button" ref={d => dbtn = d} className="btn btn-secondary rate" onClick={e => {
 						e.preventDefault();
 						cbtn.disabled = false;
 						dbtn.disabled = true;
